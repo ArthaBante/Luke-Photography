@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    font-family: "Poppins", sans-serif;   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 110vh;
+    background-image: url(turtle_.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@keyframes fade {
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+
+    0%{
+        opacity: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/*Desktop Nav*/
+
+
+
+nav, .nav-links, .nav-links-container{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.nav-links-container{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: black;
+
+}
+.logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+.logo a:hover{
+    color: rgb(188, 188, 188);
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo{
+
+    font-size: 2.5rem ;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 3vh;
+    letter-spacing: 1px;
+    
+    
+    
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+.part_1{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(68, 65, 65);
+    background-image: url(turtle_.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: brightness(1.1) contrast(1.2);
+    filter: brightness(1.1) contrast(1.2);
+}
+
+.logo_2{
+
+    font-size: 2.5rem ;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 3vh;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    
+    
+    
+}
+.logo_2:hover{
+    cursor: default;
+}
+
+.logo_3{
+
+    font-size: 1rem ;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    
+}
+.logo_3:hover{
+    cursor: default;
+}
+
+.logo_4{
+
+    font-size: 2.5rem ;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 3vh;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+.logo_4:hover{
+    cursor: default;
+
+}
+
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+    
+
+}
+
+.contact-info-container a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+
+
+
+
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+
+}
+
+.photo-gallery{
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+
+#step_3{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    
+    
+}
+
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p{
+    font-weight: 500;
+    
+}
+
+.section__text__p1{
+    text-align: center;
+}
+
+
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin:2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+}
+
+.email-icon{
+    height: 2.5rem;
+}
+
+footer{
+    height: 15vh;
+    margin: 0 1rem;
+  }
+
+footer p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+.nav-links-container a{
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+.nav-links-container a:hover{
+    color: rgb(188, 188, 188);
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+@media(max-width:600px) {
+
+    .photo-gallery{
+        flex-direction: column;
+    }
+
+    .part_1{
+        width: 100%;
+        height: 110vh;
+        background-image: url(turtle_.jpg);
+        
+    }
+
+    #artist{
+       
+            height: 83vh;
+            margin-bottom: 6rem;
+        }
+
+    
+
+        
+    }
+
+    @media screen and (max-width: 600px) {
+        .section__pic-container {
+            width: auto;
+            height: 46vw;
+            justify-content: center;
+        }
+
+        .contact-info-upper{
+            flex-wrap: wrap;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #contact, footer{
+            height: 40vh;
+        }
+        #profile{
+            height: 83vh;
+            margin-bottom: 0;
+        }
+        article{
+            font-size: 1rem;
+        }
+        footer nav{
+            height: fit-content;
+            margin-bottom: 2rem;
+        }
+        .about-container, .contact-info-upper-container, btn-container{
+            flex-wrap: wrap;
+        }
+        
+        .contact-info-container{
+            margin: 0;
+        }
+    
+        .contact-info-container p, .nav-links li a{
+            font-size: 1rem;
+        }
+        .experience-sub-title{
+            font-size: 1.25rem;
+        }
+    
+        .logo{
+            font-size: 1.5rem;
+        }
+    .nav-links{
+        flex-direction:row;
+        gap: 1rem;
+        text-align: center;
+    }
+    .section__pic-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2{
+        font-size: 1rem;
+    }
+
+    .section__text{
+        font-size: 1rem;
+    }
+    
+    .title{
+        font-size: 2rem;
+    }
+    
+    .text-container{
+        text-align: center;
+    }
+    
+    }
+    
+    
+
+
+
+
