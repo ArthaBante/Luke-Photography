@@ -18,7 +18,9 @@ header{
     height: 110vh;
     background-image: url(turtle_.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 
 @keyframes fade {
@@ -125,7 +127,7 @@ nav{
     font-weight: 400;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 7vh;
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 50% cover 50%;
@@ -139,12 +141,12 @@ nav{
 
 .logo_3{
 
-    font-size: 1rem ;
+    font-size: 1.5rem ;
     font-weight: 200;
     color: rgb(0, 0, 0);
     text-align: center;
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 50% cover 50%;
@@ -189,6 +191,13 @@ nav{
     text-decoration: none;
     text-decoration-color: white;
 
+}
+
+.contact-info-container a:hover{
+    color: rgb(188, 188, 188);
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: rgb(181, 181, 181);
 }
 
 
@@ -263,8 +272,9 @@ nav{
 
 
 .section__text__p2{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: darkgrey;
 }
 
 
@@ -272,7 +282,7 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 65vh;
 }
 
 .contact-info-upper{
@@ -304,7 +314,7 @@ nav{
 }
 
 .email-icon{
-    height: 2.5rem;
+    height: 3rem;
 }
 
 footer{
@@ -341,6 +351,11 @@ footer p{
         flex-direction: column;
     }
 
+    #step_3{
+        flex-direction: column;
+        height: 75vh;
+    }
+
     .part_1{
         width: 100%;
         height: 110vh;
@@ -352,6 +367,7 @@ footer p{
        
             height: 83vh;
             margin-bottom: 6rem;
+            display: block;
         }
 
     
@@ -362,7 +378,8 @@ footer p{
     @media screen and (max-width: 600px) {
         .section__pic-container {
             width: auto;
-            height: 46vw;
+            height: 35vh;
+            overflow: hidden;
             justify-content: center;
         }
 
@@ -372,12 +389,21 @@ footer p{
     }
 
     @media screen and (max-width: 600px) {
-        #contact, footer{
-            height: 40vh;
+        #contact{
+            height: 20vh;
+            padding-bottom: 15vh;
+            
         }
+
+        footer{
+            height: 15vh;
+            padding-top: 5vh;
+        }
+
         #profile{
             height: 83vh;
             margin-bottom: 0;
+           
         }
         article{
             font-size: 1rem;
@@ -385,13 +411,14 @@ footer p{
         footer nav{
             height: fit-content;
             margin-bottom: 2rem;
+            
         }
         .about-container, .contact-info-upper-container, btn-container{
             flex-wrap: wrap;
         }
         
         .contact-info-container{
-            margin: 0;
+            margin: 10px;
         }
     
         .contact-info-container p, .nav-links li a{
@@ -404,33 +431,38 @@ footer p{
         .logo{
             font-size: 1.5rem;
         }
-    .nav-links{
-        flex-direction:row;
-        gap: 1rem;
-        text-align: center;
-    }
-    .section__pic-container{
-        width: auto;
-        height: 46vw;
-        justify-content: center;
-    }
-    .section__text__p2{
-        font-size: 1rem;
-    }
 
-    .section__text{
-        font-size: 1rem;
+        .logo_3{
+
+            padding-bottom: 20vh;
+        }
+
+        
+        .nav-links{
+            flex-direction:row;
+            gap: 1rem;
+            text-align: center;
+        }
+        
+        .section__text__p2{
+            font-size: 1rem;
+        }
+
+        .section__text{
+            font-size: 1rem;
+            padding-bottom: 5vh;
+        }
+        
+        .title{
+            font-size: 2rem;
+        }
+        
+        .text-container{
+            text-align: center;
+        }
+        
     }
     
-    .title{
-        font-size: 2rem;
-    }
-    
-    .text-container{
-        text-align: center;
-    }
-    
-    }
     
     
 
