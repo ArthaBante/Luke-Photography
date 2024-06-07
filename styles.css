@@ -110,7 +110,8 @@ nav{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
+    z-index: -1;
     -webkit-filter: brightness(1.1) contrast(1.2);
     filter: brightness(1.1) contrast(1.2);
 }
