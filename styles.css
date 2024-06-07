@@ -365,6 +365,7 @@ footer p{
         width: 100%;
         height: 110vh;
         background-image: url(turtle_.jpg);
+        background-attachment: scroll;
         
     }
 
